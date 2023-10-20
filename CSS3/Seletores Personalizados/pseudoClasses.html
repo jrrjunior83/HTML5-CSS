@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block; /*deixa tudo na mesma linha*/
+            background-color: hsl(164, 71%, 87%);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px; /*altura*/
+            width: 200px;  /*largura*/
+        }
+      
+        /*os dois pontos : são as pseudo-classes*/
+        div:hover{
+            background-color: blanchedalmond; /*com o hover, a cor da div muda ao passar o mause por cima. Porém, o id tem precedência hierárquica.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+</body>
+</html>

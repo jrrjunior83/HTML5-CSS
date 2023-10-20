@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Caixas</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: rgb(116, 240, 240);
+           /*borda é a área que circunda o texto*/
+            border: 10px solid darkblue;
+            padding-top: 5px 5px 5px 5px ; /*padding é a área entre o texto e a borda*/
+            scroll-padding-bottom: 5px;
+            margin-top: 10px; /*margem fica depois da borda*/
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            outline-width: 2px; /*outline fica ente a borda e a margem, porém ocorre dentro da margem*/
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+        }
+        ul{
+            color: darkblue;
+           background-color: antiquewhite;
+           width: 300px;
+           height: auto;
+           border-width: 10px;
+           border-style: solid;
+           border-color: brown;
+        }
+        li{
+            color: black;
+            background-color: aquamarine;
+            text-align: justify;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Level</h1>
+        <ul>
+            &lt;div&gt;
+            <li>&lt;h1&gt; - &lt;h6&gt;;</li>
+            <li>&lt;p&gt;;</li>
+            <li>&lt;main&gt;;</li>
+            <li>&lt;header&gt;;</li>
+            <li>&lt;nav&gt;;</li>
+            <li>&lt;article&gt;;</li>
+            <li>&lt;aside&gt;;</li>
+            <li>&lt;footer&gt;;</li>
+            <li>&lt;form&gt;;</li>
+            <li>&lt;video&gt;.</li>
+        </ul>
+    <h1>inline-level</h1>
+    <ul>
+        &lt;span&gt;
+        <li>&lt;a&gt;</li>
+        <li>&lt;code&gt; </li>
+        <li>&lt;small&gt;</li>
+        <li>&lt;&lt;strong&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;sup&gt; - &lt;sub&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;select&gt;</li>   
+        
+    </ul> 
+</body>
+</html>

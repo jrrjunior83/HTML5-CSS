@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML-5.ico" type="image/x-icon">
+   
+    <title>Imagens Dinâmicas</title>
+</head>
+<body style="background-color: rgb(201, 20, 20);">
+    <h1>Imagem Flexível</h1>
+       <p>Você está vendo a imagem completa? Experimente aumentar o tamanho da sua janela para aproveitar a melhor experiência &#x1F929;</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/IMG_P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/IMG_M.png" type="image/png">
+        <img src="img/IMG_G.png" alt="Imagem flexivel">
+    </picture>
+</body>
+</html>

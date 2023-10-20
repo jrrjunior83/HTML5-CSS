@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esta imagens em dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="Áudios/A Walk Into Space - Topher Mohr and Alex Elena.mp3" type="audio/mpeg"> 
+    </audio>
+    <p>Infelizmente o seu navegador não suporta áudio. <a href="Áudios/A Walk Into Space - Topher Mohr and Alex Elena.mp3">Clique no arquivo mp3 para baixá-lo.</a></p> 
+    
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML-5.ico" type="image/x-icon">
+        <title>Formatação de Texto</title>
+        <style>
+            mark {
+                background-color: aqua;
+            }
+        </style>
+</head>
+<body>
+    <h1>Principais formatação</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos <b>termo em negrito</b> usando a tag &lt; b &gt; (não semântica)</p>
+    <p>Nesta frase, temos <strong>termo em negrito</strong> usando o &lt;strong&gt; (semântico).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântico).</p>
+    <p>nesta frase, temos um <em>termo em itálico</em> usando a tag &lt;em&gt; (semântico).</p>
+    <h2>Marca Texto</h2>
+    <p>Nesta frase, temos um <mark>texto destacado com marca texto</mark> usando a tag &lt;mark&gt;. Para mudar as cores desse marca texto, apenas com as CSS. <mark style="background-color: rgb(0, 255, 13);">Uma das formas é usando o parametro style dentro da tag &lt;mark&gt;. Porém, desta forma altera apenas o &lt;mark&gt; atual</mark>, para <mark>alterar a cor padrão para padronizar todas as cores padrão do site, falando em marcador de texto, precisa ser feito o style background- color abaixo do título.</mark></p>
+    <h2><del>Texto Deletado</del></h2>
+    <p>Para deletar um texto, <del>mas ainda deixar a informação ali para conhecimento de como era, deve-se apenas usar a tag &lt;strike&gt;</del>, com o HTML5, usa-se a tag &lt;del&gt;. Inclusive, foi a tag usada para este parágrafo.
+    </p>
+    <h2><ins>Texto Inserido</ins></h2>
+    <p>O <ins>texto inserido</ins> é o exato oposto do <del>texto deletado</del> que vimos anteriormente. Neste caso, se colocamos um texto qualquer dentro de &lt;ins&gt; e &lt;/ins&gt;, <ins>estamos querendo informar que o texto sublinhado foi inserido na nova atualização ou que se deve prestar a atenção nessa parte.</ins></p>
+    <h2>Texto Sobrescrito e Texto Subscrito</h2>
+    <h3>Sobrescrito</h3>
+    <p>Para escrever x<sup><small>2</small></sup> basta colocar o que vai ficar na parte superior da letra entre a tag &lt;sup&gt; e dentro da tag &lt;small&gt; para ficar pequenininho o número.</p>
+    <h3>Subscrito</h3>
+    <p>Para escrever na base da letra como em uma fómula química H<sub><small>2</small></sub>O, coloca-se entre a tag &lt;sub&gt; e dentro da tag &lt;small&gt; para ficar pequenininho o número.</p>
+    <h2>Código Fonte</h2>
+    <p>Existe a tag &lt;code&gt; da HTML onde se pode delimitar o código.</p>
+    <h3 style="font-size: small;">Exemplo:</h3>
+    <pre>
+        <code>nr = int(input('Digite um número.'))
+            for c in range(0, 10):
+                tb = c * nr
+                print('{} X {} = {}'.format(c, tb, nr))
+            </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Para citações no meio da frase, basta <q>colocar o trecho entre a tag &lt;q&gt;. Desta forma, o trecho ficará entre áspas.</q></p>
+    <p>Para citações em bloco, usa-se outra tag, a &lt;blockquote&gt;.</p>
+    <h3 style="font-size: small;">Exemplo:</h3>
+    <p>Em seu livro, O Mestre da Sensibilidade, Augusto Cury conclui poeticamente, sobre Jesus, que:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/O_mestre_da_sensibilidade/oKn5DwAAQBAJ?hl=pt-BR&gbpv=1&dq=livro+augusto+cury&printsec=frontcover">
+        Ele tinha todos os motivos para ter depresão e ansiedade, mas nunca alguém foi tão feliz e livre no território da emoção.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando muito.</p>
+    </html>
